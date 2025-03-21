@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "disaster_relief_backend": {
+      "main": "src/disaster_relief_backend/main.mo",
+      "type": "motoko"
+    },
+    "disaster_relief_frontend": {
+      "dependencies": [
+        "disaster_relief_backend"
+      ],
+      "source": [
+        "src/disaster_relief_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "disaster_relief_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
